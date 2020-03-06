@@ -1,0 +1,40 @@
+package calculator;
+
+import java.util.Scanner;
+
+public class test {
+
+	public static void main(String[] args) {
+		System.out.println("please insert the word");
+		Scanner getnum=new Scanner(System.in);
+	
+	   
+		String original =getnum.nextLine();
+		original=original.toLowerCase();
+	  original =original.replace(" ", "");
+	  original=original.replaceAll("[^a-z]", "");
+	 
+	String reverse ="";
+	for(int i= original.length() -1; i >= 0; i--) {
+		reverse += original.charAt(i);}
+		//System.out.println(reverse);
+	
+
+
+	
+		if(reverse.equals(original))
+			{			
+		System.out.println("True");}
+		else {
+			
+			System.out.println("False");}
+		
+	
+		
+	}
+	
+
+
+	}
+
+
